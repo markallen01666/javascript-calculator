@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Calculator web app
+    Demonstration project using HTML5, CSS3, Bootstrap, jQuery
+
+    Simple web calculator app
+
+    Mark Allen: Freelance Web Developer - 2017
+-->
+
+<html>
+<head>
+  <title>Calculator WebApp</title>
+  <!-- Load font, script, stylesheet, Bootstrap 3 and jQuery 3 -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body class="bg">
+  <div class="container">
+    <div class="row topOffset ">
+      <div class="col-sm-4"></div>
+      <!-- Calculator setup -->
+      <div class="col-sm-4 calc-bg well">
+        <hr />
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <!-- Display screen -->
+          <div class="col-xs-10 text-right" id="calc-screen">
+            <h2 id="displayVal"><strong>0</strong></h2>
+          </div>
+          <div class="col-xs-1"></div>
+        </div>
+        <hr />
+        <!-- Keypad -->
+        <div class="row text-center clearance">
+          <div class="col-xs-6">
+            <button type="button" class="btn btn-danger btn-block" value="AC"> <h3>AC</h3> </button>
+          </div>
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-danger btn-block" value="CE"><h3>CE</h3></button>
+          </div>
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-success btn-block"  value="/"><h3><strong>&divide;</strong></h3></button>
+          </div>
+        </div>
+        <div class="row text-center clearance">
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-default btn-block" value="7"><h3>7</h3></button>
+          </div>
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-default btn-block" value="8"><h3>8</h3></button>
+          </div>
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-default btn-block" value="9"><h3>9</h3></button>
+          </div>
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-success btn-block" value="x"> <h3><strong>&times;</strong></h3> </button>
+          </div>
+        </div>
+        <div class="row text-center clearance">
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-default btn-block" value="4"> <h3>4</h3> </button>
+          </div>
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-default btn-block" value="5"> <h3>5</h3> </button>
+          </div>
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-default btn-block" value="6"> <h3>6</h3> </button>
+          </div>
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-success btn-block" value="-"> <h3><strong>&minus;</strong></h3> </button>
+          </div>
+        </div>
+        <div class="row text-center clearance">
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-default btn-block" value="1"> <h3>1</h3> </button>
+          </div>
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-default btn-block" value="2"> <h3>2</h3> </button>
+          </div>
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-default btn-block" value="3"> <h3>3</h3> </button>
+          </div>
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-success btn-block" value="+"> <h3><strong>&plus;</strong></h3> </button>
+          </div>
+        </div>
+        <div class="row text-center clearance">
+          <div class="col-xs-3">
+            <button type="button calc-button" class="btn btn-default btn-block" value="0"> <h3>0</h3> </button>
+          </div>
+          <div class="col-xs-3">
+            <button type="button calc-button" class="btn btn-default btn-block" value="."> <h3>.</h3> </button>
+          </div>
+          <div class="col-xs-6">
+            <button type="button calc-button" class="btn btn-primary btn-block" value="="> <h3><strong>&equals;</strong></h3> </button>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+  </div>
+</body>
+</html>
